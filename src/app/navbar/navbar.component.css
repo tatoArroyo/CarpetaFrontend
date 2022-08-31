@@ -1,0 +1,15 @@
+.navbar.navbar-expand-lg.bg-secondary.fixed-top{
+    background-color: #b1b0b0;
+}
+i.fa-brands.fa-linkedin.fa-2x1:hover{
+    color: rgb(84, 165, 247);
+}
+i.fa-brands.fa-instagram.fa-2x1:hover{
+    color:rgb(218, 159, 246);
+}
+i.fa.solid.fa.user.fa-2x1:hover{
+    color:rgb(146, 61, 185)
+}
+.list.group{
+ --bs-list-group-bg:transparent;   
+}

@@ -1,0 +1,11 @@
+.Name{
+    background-color: rgb(161, 201, 214);
+    padding: 20px;
+   }
+
+/*etiqueta nombre*/
+.Name{
+    font-weight: bold;
+    margin-top: auto;
+}
+   
