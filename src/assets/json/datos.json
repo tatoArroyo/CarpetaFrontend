@@ -1,0 +1,135 @@
+{    
+"img": "./assets/img/foto c.v..jpg",    
+"nombre": "Oscar Alberto",
+"apellido": "Arroyo",
+"puesto": "Full Stack Developer Jr",
+"acerca": "Vivo en la ciudad de Mercedes, Pcia de Bs As.Experiencia en Bancos y Financieras.Trabajo en equipo",
+       
+"acerca_de_mi":{ 
+    "img": "./assets/img/pexels-lluvia.jpg"
+},
+
+"redes":[  
+     "instagram", "facebook", "linkedin"
+  ],
+
+
+
+"estudios":[ 
+    { 
+ "id": 1,
+"img": "./assets/img/descarga.jpg",
+"estudio": "Estudios Secundarios",        
+"institucion": "Escuela Nacional de Comercio",
+"titulo": "Perito Mercantil",
+"fin": "1980"
+},
+{
+    "id": 2,   
+    "img": "./assets/img/logo_mail.png",
+    "estudio": "Universidad Nacional de La Pampa",        
+    "institucion": "Universidad Nacional de La Pampa",
+    "titulo": "Contador Publico-Sin terminar",
+    "fin": "1982"
+    },
+    {     
+        "id": 3,
+        "img": "./assets/img/foto argentina programa.png",
+        "estudio": "Se Programar",       
+        "institucion": "Argentina programa 3",
+        "titulo": "Full stack Developer Jr",
+        "fin": "2022"
+}
+], 
+     
+"experiencia": [ { 
+    "id": 1,
+    "img": "./assets/img/Estudiocontable.jpg",           
+    "trabajo": "Estudio Contable Impositivo Pennella",
+    "inicio": "1979",
+    "fin": "1983",
+    "puesto": "administrativo"
+},
+{  
+    "id": 2,
+    "img": "./assets/img/banco-de-la-pampa.png",        
+    "trabajo": "Banco de La Pampa",
+    "inicio": "1984",
+    "fin": "2002",
+    "puesto": "Oficial de Negocios" 
+},
+{  
+    "id": 3,
+    "img": "./assets/img/medife.png",        
+    "trabajo": "Medife",
+    "inicio": "2003",
+    "fin": "2005",
+    "puesto": "Gerente Sucursal"
+},
+{           
+    "id": 4,
+    "img": "./assets/img/mutualismo.png",                                                   
+    "trabajo": "Mudivendi-Mutual",
+    "inicio": "2005",
+    "fin": "2009",
+    "puesto": "Gerente Zonal"
+},
+{ 
+    "id": 5,
+    "img": "./assets/img/tio bigotes.jpg",         
+    "trabajo": "Comercio Minorista",
+    "inicio": "2009",
+    "fin": "2022",
+    "puesto": "Propietario"
+}
+],
+
+"habilidades": [ {  
+    "id": 1,
+    "habilidad": "HTML", 
+    "porcentaje": "80",
+    "color": "bg-primary"
+},
+{ 
+    "id": 2,
+    "habilidad": "CSS", 
+    "porcentaje": "75",
+    "color": "bg-success"
+},
+{  
+    "id": 3,
+    "habilidad": "JAVASCRIPT",
+    "porcentaje": "60",
+    "color": "bg-secondary"
+},
+{  
+    "id": 4,
+    "habilidad": "BOOSTRAP",
+    "porcentaje": "50",
+    "color": "bg-warning"
+},
+{  
+    "id": 5,
+    "habilidad": "ANGULAR",
+    "porcentaje": "30",
+    "color": "bg-danger"
+}
+],
+
+"proyectos":{  
+    "titulo": "Go Code",
+    "acercaproyec": "Somos un grupo de estudiantes de programacion, de todo el pais que hacemos proyectos gratis para gente que ayuda a otras sin fines de lucro(ONG,rescate de mascotas, grupos de autoayuda,etc),que necesiten una pagina WEB gratuita y nosotros brindarselas." 
+},
+
+"footer":{  
+    "nombre": "Oscar Alberto Arroyo Argentina Programa",
+    "ciudad": "Buenos Aires Argentina"
+}
+}
+
+
+   
+
+
+
+

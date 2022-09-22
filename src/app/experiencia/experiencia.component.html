@@ -1,13 +1,14 @@
 <div id="experiencia" class="Experiencia">
     <u><h1>Experiencia</h1></u>
-  <div class="row">
-  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <img src="" width="">
+  <div class="row" *ngFor="let experiencia of experiencia">  
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+  <img [src]="experiencia.img">
     </div>
     <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-      <u><h4>Estudio Contable Impositivo</h4></u>
-     <p>1979/1983</p>
-      <p>Administrativo</p>
+      <u><h4>{{experiencia.trabajo}}</h4></u>
+     <p>{{experiencia.inicio}}</p>
+    <p>{{experiencia.fin}}</p>
+      <p>{{experiencia.puesto}}</p>
      </div>
      <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
   <!-- Define the symbols, these are invisible on the page -->
@@ -15,75 +16,5 @@
   <i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>
   </div>
      </div>
-     <div class="row">
-     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-       <img src="/assets/img/banco-de-la-pampa.png" width="100px">
-       </div>
-       <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-         <u><h4>Banco de la Pampa</h4></u>
-         <p>1984/2002</p>
-        <p>Oficial de Negocios-Sub Gerente sucursal</p>
-      <span>Calificacion y Clasificacion Crediticia.Manifestacion de Bienes.Manejo de Tesoro con documentos,Prendas e Hipotecas.
-        Reemplazo de Gerencia.Atencion integral al cliente.Creditos de Evolucion,Prendarios,Personales,Hipotecarios,etc </span>
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-     <i data-fa-symbol="delete" class="fas fa-trash fa-fw"></i>
-     <i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>
-     <i data-fa-symbol="edit" class= "fa-solid fa-pen-to-square"></i>
-     </div>
-     </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <img src="/assets/img/medife.png" width="100px">
-            </div>
-            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-              <u><h4>Medife-Prepaga</h4></u>
-             <p>Gerente Sucursal Trenque Lauquen</p>
-             <p>2003/2005</p>
-             <span>Atencion a colegios de medicos,farmaceuticos,etc.
-              Tres empleados a cargo.Pagos a prestadores.Atencion y resolucion de problemas a clientes.
-              Vasta zona de atencion desde Santa Rosa(La Pampa a 9 de julio Pcia Bs As).
-             </span>
-             </div>
-             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-          <!-- Define the symbols, these are invisible on the page -->
-          <i data-fa-symbol="delete" class="fas fa-trash fa-fw"></i>
-          <i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>
-          <i data-fa-symbol="edit" class="fa-solid fa-pen-to-square"></i>
-          </div>
-          </div>
-           <div class="row">
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-              <img src="" width="">
-              </div>
-              <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-               <u><h3>Mudivendi-Mutual</h3></u>
-               <p>Gerente Zonal</p>
-               <p>2005/2009</p>
-               <span>Cinco Sucursales a cargo con 30 empleados.Calificacion y Clasificacion Crediticia.
-                Reuniones con Intendencias,Sindicatos para prestamos a sus afiliados.-
-                Armado de Estrategias financieras y de Logistica de Sucursales.</span>
-               </div>
-               <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <!-- Define the symbols, these are invisible on the page -->
-            <i data-fa-symbol="delete" class="fas fa-trash fa-fw"></i>
-            <i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>
-            </div>
-            </div>  
-          <div class="row">
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-              <img src="/assets/img/tio bigotes.jpg" width="100px">
-              </div>
-              <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-                <u><h4>Comercio Minorista</h4></u>
-                <p>Propietario</p>
-                <p>2009 a la fecha</p>
-               <p>Venta fiambres y quesos</p>
-               <span></span>
-               </div>
-               <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <!-- Define the symbols, these are invisible on the page -->
-            <i data-fa-symbol="delete" class="fas fa-trash fa-fw"></i>
-            <i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>
-            </div>
-            </div> 
+   
+            
