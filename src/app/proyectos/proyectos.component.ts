@@ -6,8 +6,8 @@ import { PortfolioService } from '../servicios/portfolio.service';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
-titulo: string = '';
-acercaproyec: string = '';
+proyectos: any = [];
+
 
   constructor(private portfolioService: PortfolioService) { }
 
@@ -16,8 +16,7 @@ acercaproyec: string = '';
   this.portfolioService.getDatos().subscribe(datos => {
     console.log(datos);
 
-this.titulo=datos.titulo;
-this.acercaproyec=datos.acercaproyec;
+this.proyectos=datos.proyectos;
 });
 }
 }
