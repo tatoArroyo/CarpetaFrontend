@@ -9,8 +9,9 @@ import { HttpClient} from '@angular/common/http';
 })
 export class PortfolioService {
 //el primer hhtp se llama alias
-  constructor(private http:HttpClient) { } 
-  getDatos():Observable<any> {
-    return this.http.get('./assets/json/datos.json');
+  constructor(private http: HttpClient) { } 
+   public getDatos():Observable<any>{ 
+
+    return this.http.get('/assets/json/datos.json');  
+    } 
   } 
-}

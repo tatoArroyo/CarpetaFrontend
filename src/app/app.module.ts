@@ -28,6 +28,7 @@ import { ProyecadminisComponent } from './proyecadminis/proyecadminis.component'
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
+import { LogiComponent } from './logi/logi.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { FooterComponent } from './footer/footer.component';
     ProyecadminisComponent,
     ProyectosComponent,
     FooterComponent,
+    LogiComponent,
   ],
   imports: [
     BrowserModule,

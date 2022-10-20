@@ -2,8 +2,6 @@
 "img": "./assets/img/foto c.v..jpg",    
 "nombre": "Oscar Alberto",
 "apellido": "Arroyo",
-"puesto": "Full Stack Developer Jr",
-"acerca": "Vivo en la ciudad de Mercedes, Pcia de Bs As.Experiencia en Bancos y Financieras.Trabajo en equipo",
        
 "acerca_de_mi":{ 
     "img": "./assets/img/pexels-lluvia.jpg"
