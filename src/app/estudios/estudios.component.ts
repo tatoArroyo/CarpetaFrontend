@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService} from '../servicios/portfolio.service';
+import { Estudios } from '../model/estudios';
+import { EstudiosService } from '../service/estudios.service';
+import { TokenService } from '../service/token.service';
 
 @Component({
   selector: 'app-estudios',
@@ -7,16 +9,35 @@ import { PortfolioService} from '../servicios/portfolio.service';
   styleUrls: ['./estudios.component.css']
 })
 export class EstudiosComponent implements OnInit {
-  estudios: any;
 
-  constructor(private portfolioService: PortfolioService) { }
+  estudios: Estudios [] = [];
+ 
+  
+
+  constructor(private estudiosS: EstudiosService, private tokenService: TokenService) { }
+  isLogged = false;
 
   ngOnInit(): void {
-    this.portfolioService.getDatos().subscribe(datos => {
-      console.log(datos);
+    this.cargarEstudios();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    }else{
+      this.isLogged = false;
+    }
+}
+cargarEstudios(): void{
+  this.estudiosS.lista().subscribe(data => {this.estudios = data});
+}
 
-      this.estudios=datos.estudios;
-    
-  });
+delete(id?: number){
+  if(id != undefined){
+this.estudiosS.delete(id).subscribe(
+  data =>{
+    this.cargarEstudios();
+  }, err =>{
+    alert("no se pudo eliminar la experiencia")
   }
+)
+  }
+}
 }

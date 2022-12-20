@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from '../servicios/portfolio.service';
+import { Experiencia } from '../model/experiencia';
+import { SExperienciaService } from '../service/s-experiencia.service';
+import { TokenService } from '../service/token.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -7,16 +9,36 @@ import { PortfolioService } from '../servicios/portfolio.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
- experiencia: any = [];
 
-  constructor(private portfolioService: PortfolioService) { }
 
+ experiencia: Experiencia [] = [];
+
+ 
+  constructor(private experienciaS: SExperienciaService, private tokenService: TokenService) { }
+isLogged = false;
   ngOnInit(): void {
-  this.portfolioService.getDatos().subscribe(datos => {
-      console.log(datos);
+  
+    this.cargarExperiencia();
+    if(this.tokenService.getToken()){
+      this.isLogged = false;
+    }else{
+      this.isLogged = false;
+    }
+}
+cargarExperiencia(): void{
+  this.experienciaS.lista().subscribe(data => {this.experiencia = data});
+}
 
-      this.experiencia=datos.experiencia;
-  });
-
+delete(id?: number){
+  if(id != undefined){
+this.experienciaS.delete(id).subscribe(
+  data =>{
+    this.cargarExperiencia();
+  }, err =>{
+    alert("no se pudo eliminar la experiencia")
+  }
+)
   }
 }
+
+  }

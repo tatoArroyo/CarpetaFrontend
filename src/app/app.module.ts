@@ -29,6 +29,13 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
 import { LogiComponent } from './logi/logi.component';
+import { NewestudiosComponent } from './estudios/newestudios.component';
+import { interceptorProvider } from './service/interceptor.service';
+import { FormsModule } from '@angular/forms';
+import { EditestudiosComponent } from './estudios/editestudios.component';
+import { NewexperienciaComponent } from './experiencia/newexperiencia.component';
+import { EditexperienciaComponent } from './experiencia/editexperiencia.component';
+import { NewhabilidadComponent } from './habilidades/newhabilidad.component';
 
 
 @NgModule({
@@ -56,6 +63,11 @@ import { LogiComponent } from './logi/logi.component';
     ProyectosComponent,
     FooterComponent,
     LogiComponent,
+    NewestudiosComponent,
+    EditestudiosComponent,
+    NewexperienciaComponent,
+    EditexperienciaComponent,
+    NewhabilidadComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,8 +75,11 @@ import { LogiComponent } from './logi/logi.component';
     AppRoutingFlatModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,21 +1,21 @@
 <div id="estudios" class="Estudios">
   <div class="container-fluid">
    <u><h1>Estudios</h1></u>
+  <button type="button" class="btn btn-dark" routerLink="/nuevoestu" *ngIf="isLogged">Nuevo Estudio</button>
   <div class="row" *ngFor="let estudios of estudios">
   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <img [src]="estudios.img">
+    <img="estudios.img">
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8">
-      <u><h4>{{estudios.estudio}}</h4></u>
-      <p>{{estudios.institucion}}</p>
+      <u><h4>{{estudios.nombreE}}</h4></u>
+      <p>{{estudios.descripcionE}}</p>
      <p>{{estudios.titulo}}</p>
      <p><time>{{estudios.fin}}</time></p>
      </div>
      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-
-  <i data-fa-symbol="delete" class="fas fa-trash fa-fw"></i>
-  <i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>
-  <i data-fa-symbol="edit" class="fa-solid fa-pen-to-square"></i>
+<button class="btn btn-light" routerLink="/editestu/{{estudios.id}}"><i data-fa-symbol="delete" class="fas fa-trash fa-fw">BORRAR</i></button>
+  <button class=" btn btn-danger"><i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>EDITAR</button>
+  
   </div>
    </div>
    </div>

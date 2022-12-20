@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { persona } from '../model/persona.model';
+import { PersonaService } from '../service/persona.service';
 import { PortfolioService } from '../servicios/portfolio.service';
 
 
@@ -8,19 +10,14 @@ import { PortfolioService } from '../servicios/portfolio.service';
   styleUrls: ['./name.component.css']
 })
 export class NameComponent implements OnInit {
-  nombre: String = '';
-  apellido: String = '';
-  img: String = '';
+  
+  persona: persona = new persona("", "", "");
 
-  constructor(private portfolioService: PortfolioService) { }
+  constructor(private personaService: PersonaService  ) { }
+  
 
   ngOnInit(): void {
-    this.portfolioService.getDatos().subscribe(datos => {
-    console.log(datos);
-  
-    this.nombre=datos.nombre;
-    this.apellido=datos.apellido;
-    this.img=datos.img
-    });
-}
+
+     this.personaService.getPersona().subscribe(data => {this.persona = data})
+  }
 }
