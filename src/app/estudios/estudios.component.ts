@@ -20,7 +20,7 @@ export class EstudiosComponent implements OnInit {
   ngOnInit(): void {
     this.cargarEstudios();
     if(this.tokenService.getToken()){
-      this.isLogged = true;
+      this.isLogged = false;
     }else{
       this.isLogged = false;
     }
@@ -35,7 +35,7 @@ this.estudiosS.delete(id).subscribe(
   data =>{
     this.cargarEstudios();
   }, err =>{
-    alert("no se pudo eliminar la experiencia")
+    alert("no se pudo eliminar el estudio")
   }
 )
   }

@@ -6,14 +6,14 @@
     </div>
     <div class="row">
   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <img src="/assets/img/foto c.v..jpg" class="rounded-circle" class="img-fluid">
+    <img src={{persona.img}} class="rounded-circle" class="img-fluid">
           </div>   
           <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
            <p>{{persona.nombre}} {{persona.apellido}}</p>
             <p>Full Stack Developer jr</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> 
-  <<p>Vivo en la ciudad de Mercedes,Pcia Bs As.Experiencia en Bancos y Financieras.Trabajo en equipo</p>
+  <<p>{{persona.descripcion}}</p>
   </div>
    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <!--<button class="btn btn-light"><i data-fa-symbol="delete" class="fas fa-trash fa-fw">BORRAR</i></button>
@@ -25,5 +25,5 @@
   </div>
 </div>
 <div class="campo">
-  <button class=" btn btn-danger" routerLink="editpesona"><i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>EDITAR</button>
+  <button class=" btn btn-danger" routerLink="editper"><i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>EDITAR</button>
   </div>

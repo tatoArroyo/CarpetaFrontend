@@ -31,7 +31,6 @@ import { FooterComponent } from './footer/footer.component';
 import { LogiComponent } from './logi/logi.component';
 import { NewestudiosComponent } from './estudios/newestudios.component';
 import { interceptorProvider } from './service/interceptor.service';
-import { FormsModule } from '@angular/forms';
 import { EditestudiosComponent } from './estudios/editestudios.component';
 import { NewexperienciaComponent } from './experiencia/newexperiencia.component';
 import { EditexperienciaComponent } from './experiencia/editexperiencia.component';
@@ -39,6 +38,9 @@ import { NewhabilidadComponent } from './habilidades/newhabilidad.component';
 import { EdithabilidadesComponent } from './habilidades/edithabilidades.component';
 import { NewproyectosComponent } from './proyectos/newproyectos.component';
 import { EditproyectosComponent } from './proyectos/editproyectos.component';
+import { EditpersonaComponent } from './name/editpersona.component';
+import { FormsModule } from '@angular/forms';
+import { EditnameComponent } from './name/editname.component';
 
 
 @NgModule({
@@ -74,6 +76,8 @@ import { EditproyectosComponent } from './proyectos/editproyectos.component';
     EdithabilidadesComponent,
     NewproyectosComponent,
     EditproyectosComponent,
+    EditpersonaComponent,
+    EditnameComponent,
   ],
   imports: [
     BrowserModule,

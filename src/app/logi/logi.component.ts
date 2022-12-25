@@ -12,6 +12,6 @@ export class LogiComponent implements OnInit {
 
   ngOnInit(): void {
   
-  this.router.navigate(['/']);
+  this.router.navigate(['/logi']);
   }
 }

@@ -6,17 +6,21 @@ import { NewestudiosComponent } from './estudios/newestudios.component';
 import { NewexperienciaComponent } from './experiencia/newexperiencia.component';
 import { IntroComponent } from './intro/intro.component';
 import { LogiComponent } from './logi/logi.component';
-import { LoginComponent } from './modals/login/login.component';
+import { EditnameComponent } from './name/editname.component';
+import { EditproyectosComponent } from './proyectos/editproyectos.component';
+import { NewproyectosComponent } from './proyectos/newproyectos.component';
 
 
 const routes: Routes = [ 
-{path: 'intro', component:IntroComponent},               
-{path: '', component:LogiComponent},
+{path: '', component:IntroComponent},               
+{path: 'logi', component:LogiComponent},
 {path: '**', component:ErrorComponent},
 {path:'nuevoestu',component: NewestudiosComponent},
 {path:'nuevaexp', component: NewexperienciaComponent},
 {path:'editestu/:id', component: EditestudiosComponent},
-{path:'login', component: LoginComponent}
+{path:'newproy', component: NewproyectosComponent},
+{path:'editproy', component: EditproyectosComponent},
+{path:'editper', component: EditnameComponent}
 ];
 
 
