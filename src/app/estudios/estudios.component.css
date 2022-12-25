@@ -7,3 +7,7 @@
     background-color: rgb(161, 201, 214);
     padding: 20px;
 }
+.campo:last-child{
+    justify-content: flex-end;
+    margin-left: 45em;
+}

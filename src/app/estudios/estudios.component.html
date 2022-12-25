@@ -1,7 +1,7 @@
 <div id="estudios" class="Estudios">
   <div class="container-fluid">
    <u><h1>Estudios</h1></u>
-  <button type="button" class="btn btn-dark" routerLink="/nuevoestu" *ngIf="isLogged">Nuevo Estudio</button>
+   <button type="button" class="btn btn-dark" routerLink="/newestudios">Nuevo Estudio</button>
   <div class="row" *ngFor="let estudios of estudios">
   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <img="estudios.img">
@@ -13,10 +13,16 @@
      <p><time>{{estudios.fin}}</time></p>
      </div>
      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-<button class="btn btn-light" routerLink="/editestu/{{estudios.id}}"><i data-fa-symbol="delete" class="fas fa-trash fa-fw">BORRAR</i></button>
-  <button class=" btn btn-danger"><i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>EDITAR</button>
+      <!--<p>*ngIf="isLogged"</p>-->
+<!--<button class="btn btn-light" routerLink="/editestu/{{estudios.id}}"><i data-fa-symbol="delete" class="fas fa-trash fa-fw">BORRAR</i></button>
+  <button class=" btn btn-danger"><i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>EDITAR</button>-->
   
   </div>
    </div>
    </div>
 </div>
+<div class="campo">
+  
+  <button class="btn btn-ligh" (click)="delete"><i data-fa-symbol="delete" class="fas fa-trash fa-fw"></i>BORRAR</button>
+    <button class=" btn btn-danger"routerLink="/editestu/{{estudios}}"><i data-fa-symbol="edit" class="fas fa-pencil fa-fw"></i>EDITAR</button>
+    </div>

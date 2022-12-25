@@ -5,3 +5,7 @@
     background-color: rgb(161, 201, 214);
     font-weight: bold;
 }
+.campo:last-child{
+    justify-content: flex-end;
+    margin-left: 45em;
+}

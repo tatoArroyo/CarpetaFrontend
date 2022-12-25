@@ -8,4 +8,7 @@
     font-weight: bold;
     margin-top: auto;
 }
-   
+.campo:last-child{
+    justify-content: flex-end;
+    margin-left: 45em;
+}   

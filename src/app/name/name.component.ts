@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { persona } from '../model/persona.model';
+import { Persona } from '../model/persona';
 import { PersonaService } from '../service/persona.service';
-import { PortfolioService } from '../servicios/portfolio.service';
 
 
 @Component({
@@ -11,7 +10,8 @@ import { PortfolioService } from '../servicios/portfolio.service';
 })
 export class NameComponent implements OnInit {
   
-  persona: persona = new persona("", "", "");
+
+  persona: Persona = new Persona("", "", "", "");
 
   constructor(private personaService: PersonaService  ) { }
   

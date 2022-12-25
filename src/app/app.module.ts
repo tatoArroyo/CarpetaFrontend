@@ -36,6 +36,9 @@ import { EditestudiosComponent } from './estudios/editestudios.component';
 import { NewexperienciaComponent } from './experiencia/newexperiencia.component';
 import { EditexperienciaComponent } from './experiencia/editexperiencia.component';
 import { NewhabilidadComponent } from './habilidades/newhabilidad.component';
+import { EdithabilidadesComponent } from './habilidades/edithabilidades.component';
+import { NewproyectosComponent } from './proyectos/newproyectos.component';
+import { EditproyectosComponent } from './proyectos/editproyectos.component';
 
 
 @NgModule({
@@ -68,6 +71,9 @@ import { NewhabilidadComponent } from './habilidades/newhabilidad.component';
     NewexperienciaComponent,
     EditexperienciaComponent,
     NewhabilidadComponent,
+    EdithabilidadesComponent,
+    NewproyectosComponent,
+    EditproyectosComponent,
   ],
   imports: [
     BrowserModule,

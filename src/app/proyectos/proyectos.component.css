@@ -15,3 +15,7 @@
     box-shadow: ejeX ejeY difumasion color;
 
 }
+.campo:last-child{
+    justify-content: flex-end;
+    margin-left: 45em;
+}

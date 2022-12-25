@@ -6,15 +6,17 @@ import { NewestudiosComponent } from './estudios/newestudios.component';
 import { NewexperienciaComponent } from './experiencia/newexperiencia.component';
 import { IntroComponent } from './intro/intro.component';
 import { LogiComponent } from './logi/logi.component';
+import { LoginComponent } from './modals/login/login.component';
 
 
 const routes: Routes = [ 
-{path: '', component:IntroComponent},               
-{path: 'logi', component:LogiComponent},
+{path: 'intro', component:IntroComponent},               
+{path: '', component:LogiComponent},
 {path: '**', component:ErrorComponent},
 {path:'nuevoestu',component: NewestudiosComponent},
 {path:'nuevaexp', component: NewexperienciaComponent},
-{path:'editestu/:id', component: EditestudiosComponent}
+{path:'editestu/:id', component: EditestudiosComponent},
+{path:'login', component: LoginComponent}
 ];
 
 
